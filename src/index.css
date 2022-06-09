@@ -22,20 +22,29 @@ nav {
     padding: 10px 4rem;
 }
 
+.btn__container {
+    display: none;
+}
+
+@media (min-width:1024px) {
+
+
+    .btn__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        gap: 10px;
+    }
+
+
+}
+
 .logo {
     color: var(--main);
     font-size: 30px;
     font-weight: 700;
     cursor: pointer;
-}
-
-
-.btn__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    gap: 10px;
 }
 
 .btn {
@@ -54,6 +63,8 @@ nav {
 .btn__login {
     background-color: var(--login);
 }
+
+
 
 .text__red {
     color: red;
@@ -93,11 +104,26 @@ label {
     color: black;
 }
 
-.bg-img {
-    background-image: url(./assets/bg.jpg);
-    background-position: center center;
-    height: 100vh;
-    background-size: cover;
+.ant-col-8 {
+    flex: 1 !important;
+    max-width: 100%;
+}
+
+.ant-col-16 {
+    display: none;
+}
+
+@media (min-width:1024px) {
+    .ant-col-16 {
+        display: grid;
+    }
+
+    .bg-img {
+        background-image: url(./assets/bg.jpg);
+        background-position: center center;
+        height: 100vh;
+        background-size: cover;
+    }
 }
 
 .remember {
