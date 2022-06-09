@@ -39,7 +39,7 @@ const Login = () => {
                                 },
                             ]}
                         >
-                            <Input className='input' name="email" placeholder="Email Address*" />
+                            <Input className='input' type="email" name="email" placeholder="Email Address*" />
                         </Form.Item>
                         <Form.Item name="password" rules={[{ required: true, message: 'Please input your Password!' }]}
                         >
